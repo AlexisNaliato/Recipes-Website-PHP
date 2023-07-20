@@ -1,0 +1,21 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+article {
+    font-size: 20px;
+    background-color: rgb(255, 25, 25);
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+}

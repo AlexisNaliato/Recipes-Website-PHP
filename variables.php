@@ -1,4 +1,6 @@
+
 <?php
+
 // variables.php
 
 $users = [
@@ -12,11 +14,13 @@ $users = [
         'full_name' => 'Mathieu Nebra',
         'email' => 'mathieu.nebra@exemple.com',
         'age' => 34,
+        'password' => 'loc',
     ],
     [
         'full_name' => 'Laurène Castor',
         'email' => 'laurene.castor@exemple.com',
         'age' => 28,
+        'password' => 'alex',
     ],
 ];
 
@@ -43,7 +47,7 @@ $recipes = [
         'title' => 'Salade Romaine',
         'recipe' => '',
         'author' => 'laurene.castor@exemple.com',
-        'is_enabled' => false,
+        'is_enabled' => true,
     ],
 ];
 
@@ -53,3 +57,5 @@ if(isset($_GET['limit']) && is_numeric($_GET['limit'])) {
 } else {
     $limit = 100;
 }
+
+?>

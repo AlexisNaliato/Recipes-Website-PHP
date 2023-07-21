@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,13 +15,13 @@
 <body class="d-flex flex-column min-vh-100">
     <div class="container">
 
-    <?php include_once('header.php'); ?>
 
-    <?php include_once('login.php') ?>
+    <?php include_once('login.php'); ?>
+    
         <h1>Site de Recettes !</h1>
 
     <!-- Si l'utilisateur existe, on affiche les recettes -->
-    <?php if(isset($loggedUser)): ?>
+    <?php if(isset($_SESSION['LOGGED_USER'])): ?>
         <?php foreach(get_recipes($recipes, $limit) as $recipe) : ?>
             <article>
                 <h3><?php echo $recipe['title']; ?></h3>
